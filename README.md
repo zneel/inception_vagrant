@@ -35,7 +35,7 @@ curl -L https://raw.githubusercontent.com/hel-kame/inception_vagrant/master/inst
 ```
 ⚠️ **If you have been working from 42 computer:**
 <br />
-Change the default machine folder by selecting **Preferences** from the **File menu** in the VM VirtualBox main window. Then, in the displayed window, click on the **General** tab. Change the Default Machine folder on your `sgoinfre/`. 
+Change the default machine folder by selecting **Preferences** from the **File menu** on the Left-Top in the VM VirtualBox main window. Then, in the displayed window, click on the **General** tab. Change the Default Machine folder on your `sgoinfre/`. 
 
 ---
 
