@@ -36,6 +36,7 @@ So if you don't, you should run:
 ```shell
 curl -L https://raw.githubusercontent.com/hel-kame/inception_vagrant/master/install.sh | bash
 ```
+
 <br />
 **If you have been working from 42 computer:**
 <br />
