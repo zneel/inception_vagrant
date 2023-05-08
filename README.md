@@ -53,6 +53,7 @@ If you have been working from 42 computer, don't forget to do the installation i
 git clone git@github.com:hel-kame/inception_vagrant.git && cd inception_vagrant && vagrant up
 ```
 The password of the user *vagrant* and *root* is **vagrant**.
+
 ---
 
 ## Usage <a name="Usage"></a>
