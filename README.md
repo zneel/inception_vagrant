@@ -31,7 +31,7 @@ To use the environment, you need to have [Vagrant](https://www.vagrantup.com/) a
 So if you don't, you should run:
 
 ```shell
-curl -L https://raw.githubusercontent.com/hel-kame/rust_vagrant/master/install.sh | bash
+curl -L https://raw.githubusercontent.com/hel-kame/inception_vagrant/master/install.sh | bash
 ```
 
 ---
