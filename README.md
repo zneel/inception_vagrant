@@ -16,6 +16,7 @@
 ## Table of contents 
 - [About](#about)
 - [Getting Started](#started)
+  - [Prerequisites](#prerequisites)
 - [Usage](#usage)
   - [Vagrant Commands](#vagrant-commands)
 - [More](#more)
@@ -26,7 +27,7 @@ Vagrant enables the creation and configuration of lightweight, reproducible, and
 
 ## Getting Started <a name="started"></a>
 
-### Prerequisites
+### Prerequisites <a name="prerequisites"></a>
 
 To use the environment, you need to have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) installed.
 <br />
