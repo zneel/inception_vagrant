@@ -42,6 +42,13 @@ curl -L https://raw.githubusercontent.com/hel-kame/inception_vagrant/master/inst
 2. Then in the displayed window, click on the **General** tab. 
 3. Change the Default Machine folder on your `sgoinfre/`. 
 
+### Installation <a name="installation></a>
+
+If you have been working from 42 computer, don't forget to do the installation in your `sgoinfre`
+Run:
+```shell
+git clone git@github.com:hel-kame/inception_vagrant.git && cd inception_vagrant && vagrant up
+```
 ---
 
 ## Usage <a name="Usage"></a>
