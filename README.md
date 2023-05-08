@@ -26,6 +26,8 @@ Vagrant enables the creation and configuration of lightweight, reproducible, and
 
 ## Getting Started <a name="started"></a>
 
+### Prerequisites
+
 To use the environment, you need to have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) installed.
 <br />
 So if you don't, you should run:
