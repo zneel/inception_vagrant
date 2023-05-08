@@ -15,8 +15,8 @@
 
 ## Table of contents 
 - [About](#about)
-- [Installation](#installation)
-- [Development](#development)
+- [Getting Started](#started)
+- [Usage](#usage)
   - [Vagrant Commands](#vagrant-commands)
 - [More](#more)
 
@@ -24,7 +24,7 @@
 
 Vagrant enables the creation and configuration of lightweight, reproducible, and portable development environments.
 
-## Installation <a name="installation"></a>
+## Getting Started <a name="started"></a>
 
 To use the environment, you need to have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) installed.
 <br />
@@ -39,7 +39,7 @@ Change the default machine folder by selecting **Preferences** from the **File m
 
 ---
 
-## Development <a name="development"></a>
+## Usage <a name="Usage"></a>
 
 ### Vagrant Commands <a name="vagrant-commands"></a>
 
