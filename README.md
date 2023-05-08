@@ -1,5 +1,5 @@
  <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1200px-Rust_programming_language_black_logo.svg.png" width=200 alt="vagrant-logo" />
+  <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" width=200 alt="vagrant-logo" />
  <h3 align="center">Rust development environment</h3>
 
   <p align="center">
