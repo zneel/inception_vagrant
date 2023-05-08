@@ -1,0 +1,18 @@
+---
+- name: Configure Inception environment
+  hosts: localhost
+  become: no
+
+  tasks:
+    - name: Install development tools
+      become: true
+      apt:
+        state: present
+        name:
+          - build-essential
+          - clang
+          - vim
+          - git
+
+    - name: Install Docker
+      command: /bin/bash -c "cd ~ && curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh"
