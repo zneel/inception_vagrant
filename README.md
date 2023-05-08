@@ -47,9 +47,8 @@ If you have been working from 42 computer:
 
 ### Installation <a name="installation"></a>
 
-If you have been working from 42 computer, don't forget to do the installation in your `sgoinfre`.
+If you have been working from 42 computer, don't forget to do the installation in your `sgoinfre/`.
 <br />
-Run:
 ```shell
 git clone git@github.com:hel-kame/inception_vagrant.git && cd inception_vagrant && vagrant up
 ```
