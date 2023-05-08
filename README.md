@@ -32,7 +32,7 @@ Vagrant enables the creation and configuration of lightweight, reproducible, and
 
 To use the environment, you need to have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) installed.
 <br />
-If you have been working from 42, they are already installed.
+If you have been working from 42 computer, they are already installed.
 <br />
 So if you don't, you should run:
 
