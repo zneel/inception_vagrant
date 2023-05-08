@@ -33,7 +33,8 @@ So if you don't, you should run:
 ```shell
 curl -L https://raw.githubusercontent.com/hel-kame/inception_vagrant/master/install.sh | bash
 ```
-⚠️ **If you have been working from 42 computer :**
+⚠️ **If you have been working from 42 computer:**
+<br />
 Change the default machine folder by selecting **Preferences** from the **File menu** in the VM VirtualBox main window. Then, in the displayed window, click on the **General** tab. Change the Default Machine folder on your `sgoinfre/`. 
 
 ---
