@@ -1,9 +1,9 @@
  <div align="center">
   <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" width=200 alt="vagrant-logo" />
- <h3 align="center">Rust development environment</h3>
+ <h3 align="center">Inception virtual environment</h3>
 
   <p align="center">
-    An awesome Vagrant to jumpstart your development into Rust.
+    An awesome Vagrant to jumpstart your development into 42 project : Inception.
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template/issues"><strong>Report Bug</strong></a>
     ·
