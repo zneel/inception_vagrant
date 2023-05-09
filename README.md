@@ -15,8 +15,10 @@
 
 ## Table of contents 
 - [About](#about)
-- [Installation](#installation)
-- [Development](#development)
+- [Getting Started](#started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
   - [Vagrant Commands](#vagrant-commands)
 - [More](#more)
 
@@ -24,22 +26,37 @@
 
 Vagrant enables the creation and configuration of lightweight, reproducible, and portable development environments.
 
-## Installation <a name="installation"></a>
+## Getting Started <a name="started"></a>
+
+### Prerequisites <a name="prerequisites"></a>
 
 To use the environment, you need to have [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) installed.
+<br />
+If you have been working from 42 computer, they are already installed.
 <br />
 So if you don't, you should run:
 
 ```shell
 curl -L https://raw.githubusercontent.com/hel-kame/inception_vagrant/master/install.sh | bash
 ```
-**If you have been working from 42 computer:**
+If you have been working from 42 computer:
 <br />
-Change the default machine folder by selecting **Preferences** from the **File menu** on the Left-Top in the VM VirtualBox main window. Then, in the displayed window, click on the **General** tab. Change the Default Machine folder on your `sgoinfre/`. 
+1. Selecting **Preferences** from the **File menu** on the Left-Top in the VM VirtualBox main window. 
+2. Then in the displayed window, click on the **General** tab. 
+3. Change the Default Machine folder on your `sgoinfre/`. 
+
+### Installation <a name="installation"></a>
+
+If you have been working from 42 computer, don't forget to do the installation in your `sgoinfre/`.
+<br />
+```shell
+git clone git@github.com:hel-kame/inception_vagrant.git && cd inception_vagrant && vagrant up
+```
+The password of the user *vagrant* and *root* is **vagrant**.
 
 ---
 
-## Development <a name="development"></a>
+## Usage <a name="Usage"></a>
 
 ### Vagrant Commands <a name="vagrant-commands"></a>
 
