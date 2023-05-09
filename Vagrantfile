@@ -24,6 +24,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, inline: "sudo curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh"
   config.vm.provision :shell, inline: "sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose"
   config.vm.provision :shell, inline: "sudo usermod -a -G sudo vagrant"
+  config.vm.provision :shell, inline: "sudo usermod -a -G docker vagrant"
   config.vm.provision :shell, inline: "sudo apt install -y google-chrome-stable"
   config.vm.provision :shell, inline: "sudo apt install -y chromium-browser"
   config.vm.provision :shell, inline: "sudo apt install -y firefox"
