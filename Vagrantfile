@@ -34,6 +34,6 @@ EOF"
   config.vm.provision :shell, inline: "sudo apt install -y google-chrome-stable"
   config.vm.provision :shell, inline: "sudo apt install -y chromium-browser"
   config.vm.provision :shell, inline: "sudo apt install -y firefox"
-  config.vm.provision :shell, inline: "sudo chown -r ${LOCAL_USER}:${LOCAL_USER} /home/${LOCAL_USER}/.docker"
+  config.vm.provision :shell, inline: "sudo chown -R ${LOCAL_USER}:${LOCAL_USER} /home/${LOCAL_USER}/.docker"
   config.vm.provision :shell, inline: "sudo shutdown -r now"
 end
