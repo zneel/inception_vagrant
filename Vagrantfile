@@ -4,38 +4,37 @@
 LOCAL_USER = ENV['USER']
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "debian/buster64"
+  config.vm.box = "debian/bookworm64"
   config.vm.hostname = "#{LOCAL_USER}"
   config.vm.provider "virtualbox" do |v|
     v.gui = true
-    v.memory = 4096
+    v.memory = 2048
     v.cpus = 2
   end
 
   config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get update
-    sudo apt-get install -y xfce4 lightdm lightdm-gtk-greeter
-    sudo apt-get install -y git curl wget
-    sudo apt-get install -y apt-transport-https ca-certificates gnupg2 software-properties-common
+    apt-get update
+    apt-get upgrade -y
     sudo usermod -aG sudo vagrant
 
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    sudo sh get-docker.sh
+    apt-get install -y kde-standard
+
+    apt-get install -y docker.io
+    systemctl enable docker
+    systemctl start docker
     sudo usermod -aG docker vagrant
 
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
     echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
     sudo apt-get update
     sudo apt-get install -y google-chrome-stable
-  SHELL
 
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo useradd -m -G sudo,docker -s /bin/bash "#{LOCAL_USER}"
+    sudo useradd -m -G sudo,docker,vagrant -s /bin/bash "#{LOCAL_USER}"
     echo "#{LOCAL_USER}:inception" | sudo chpasswd
-  SHELL
 
-  config.vm.provision "shell", inline: <<-SHELL
-    echo $LOCAL_USER="#{LOCAL_USER}" >> /home/"#{LOCAL_USER}"/.bashrc
+    echo "export LOCAL_USER="#{LOCAL_USER}"" >> /home/"#{LOCAL_USER}"/.bashrc
     sudo shutdown -r now
   SHELL
+
+  config.vm.synced_folder ".", "/vagrant", type: "rsync"
 end
