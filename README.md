@@ -73,7 +73,7 @@ To be able to control Vagrant environment, you must be at the location of the `V
 * **`vagrant halt`** - Shutdown the environment.
 * **`vagrant status`** - See what the environment is up to.
 * **`vagrant destroy`** - Completely delete the environment and all data on it.
-* **`vagrant reload`** - Reloads the environment. Useful if you change the Vagrantfile. Essentially a **`vagrant halt`** followed by **`vagrant up`**.
+* **`vagrant reload`** - Reloads the environment. Useful if you change the Vagrantfile.
 
 ## More <a name="more"></a>
 
