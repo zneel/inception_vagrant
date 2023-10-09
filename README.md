@@ -43,20 +43,25 @@ If you have been working from 42 computer:
 <br />
 1. Selecting **Preferences** from the **File menu** on the Left-Top in the VM VirtualBox main window. 
 2. Then in the displayed window, click on the **General** tab. 
-3. Change the Default Machine folder on your `sgoinfre/`. 
+3. Change the Default Machine folder on your `goinfre/`. 
 
 ### Installation <a name="installation"></a>
 
-If you have been working from 42 computer, don't forget to do the installation in your `sgoinfre/`.
+If you have been working from 42 computer, don't forget to do the installation in your `goinfre/`.
 <br />
 ```shell
 git clone https://github.com/hel-kame/inception_vagrant.git && cd inception_vagrant && vagrant up
 ```
+Make sure your environment variable `$USER` is the same as your 42 login. 
+<br />
+If necessary, you can replace the `#{LOCAL_USER}` variable into the `Vagrantfile` with your login if you don't work on 42 computers.
+<br />
+<br />
 The password of the users ***with your login***, *vagrant* and *root* is **vagrant**.
 
 ---
 
-## Usage <a name="Usage"></a>
+## Usage <a name="usage"></a>
 
 ### Vagrant Commands <a name="vagrant-commands"></a>
 
