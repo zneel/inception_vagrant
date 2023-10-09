@@ -27,9 +27,9 @@ vagrant
 EOF"
 
   config.vm.provision "shell", inline: <<-SHELL
-    sudo usermod -aG sudo "#{LOCAL_USER}"
-    sudo usermod -aG docker "#{LOCAL_USER}"
+    usermod -aG sudo "#{LOCAL_USER}"
+    usermod -aG docker "#{LOCAL_USER}"
     echo "127.0.0.1 "#{LOCAL_USER}".42.fr" >> /etc/hosts
-    sudo shutdown -r now
+    shutdown -r now
   SHELL
 end
