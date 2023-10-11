@@ -3,7 +3,7 @@
  <h3 align="center">Inception virtual environment</h3>
 
   <p align="center">
-    An awesome Vagrant to jumpstart your development into 42 project : [Inception](https://github.com/hel-kame/inception_template).
+    An awesome Vagrant to jumpstart your development into 42 project : Inception
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template/issues"><strong>Report Bug</strong></a>
     ·
