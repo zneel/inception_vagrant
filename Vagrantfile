@@ -8,8 +8,8 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "#{LOCAL_USER}"
   config.vm.provider "virtualbox" do |v|
     v.gui = true
-    v.memory = 4096
-    v.cpus = 2
+    v.memory = 12000
+    v.cpus = 12
   end
 
   config.vm.provision "shell", inline: <<-SHELL
@@ -30,6 +30,9 @@ EOF"
     usermod -aG sudo "#{LOCAL_USER}"
     usermod -aG docker "#{LOCAL_USER}"
     echo "127.0.0.1 "#{LOCAL_USER}".42.fr" >> /etc/hosts
+    echo "127.0.0.1 adminer.42.fr" >> /etc/hosts
+    echo "127.0.0.1 mywebsite.42.fr" >> /etc/hosts
+    echo "127.0.0.1 grafana.42.fr" >> /etc/hosts
     shutdown -r now
   SHELL
 end
