@@ -57,7 +57,7 @@ Make sure your environment variable `$USER` is the same as your 42 login.
 If necessary, you can replace the `#{LOCAL_USER}` variable into the `Vagrantfile` with your login if you don't work on 42 computers.
 <br />
 <br />
-The password of the users ***with your login***, *vagrant* and *root* is **vagrant**.
+All the passwords of each user are **vagrant**.
 
 ---
 
